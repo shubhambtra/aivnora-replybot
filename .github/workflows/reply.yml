@@ -30,7 +30,7 @@ concurrency:
 jobs:
   reply:
     runs-on: ubuntu-latest
-    timeout-minutes: 65
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
 
@@ -51,7 +51,7 @@ jobs:
           IG_AIVNORA_ACCESS_TOKEN: ${{ secrets.IG_AIVNORA_ACCESS_TOKEN }}
           IG_AIVNORA_BUSINESS_ID: ${{ secrets.IG_AIVNORA_BUSINESS_ID }}
         run: |
-          END=$(( $(date +%s) + 55*60 ))
+          END=$(( $(date +%s) + 350*60 ))
           PASS=0
           while [ "$(date +%s)" -lt "$END" ]; do
             PASS=$((PASS+1))
