@@ -1,0 +1,9 @@
+{
+  "name": "aivnora-replybot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Instagram comment reply bot — runs on GitHub Actions when the home machine is off.",
+  "main": "replyBot.js",
+  "engines": { "node": ">=18" },
+  "dependencies": { "dotenv": "^17.4.2" }
+}

@@ -1,0 +1,5 @@
+.env
+node_modules/
+editor-replies.json
+replyBot.lock
+*.log
